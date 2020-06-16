@@ -39,6 +39,7 @@
                     <goals>
                         <goal>install</goal>
                     </goals>
+                    <tagbase>https://github.com/Jarvisp-java/pet-clinic.git</tagbase>
                 </configuration>
             </plugin>
         </plugins>
@@ -46,8 +47,8 @@
 
 
   <scm>
-      <url>https://github.com/Jarvisp-java/pet-clinic.git</url>
-      <connection>scm:git:https://github.com/Jarvisp-java/pet-clinic.git</connection>
+      <!--<url>https://github.com/Jarvisp-java/pet-clinic.git</url>
+      <connection>scm:git:https://github.com/Jarvisp-java/pet-clinic.git</connection>-->
     <tag>pet-clinic-0.0.2</tag>
   </scm>
 </project>
