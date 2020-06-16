@@ -14,7 +14,7 @@
     </parent>
     <groupId>guru.petclinic</groupId>
     <artifactId>pet-clinic</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>pet-clinic</name>
     <description>Demo project for Spring Boot</description>
 
@@ -35,12 +35,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>3.0.0-M1</version>
                 <configuration>
                     <goals>
                         <goal>install</goal>
+<!--                        <autoVersionSubmodules>true</autoVersionSubmodules>-->
                     </goals>
-                    <tagbase>https://github.com/Jarvisp-java/pet-clinic.git</tagbase>
                 </configuration>
             </plugin>
         </plugins>
@@ -48,8 +47,6 @@
 
 
   <scm>
-      <!--<url>https://github.com/Jarvisp-java/pet-clinic.git</url>
-      <connection>scm:git:https://github.com/Jarvisp-java/pet-clinic.git</connection>-->
     <tag>pet-clinic-0.0.2</tag>
   </scm>
 </project>
