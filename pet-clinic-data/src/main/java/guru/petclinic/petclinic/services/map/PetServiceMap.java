@@ -1,7 +1,7 @@
-package services.map;
+package guru.petclinic.petclinic.services.map;
 
 import guru.petclinic.petclinic.model.Pet;
-import services.CrudService;
+import guru.petclinic.petclinic.services.CrudService;
 
 import java.util.Set;
 

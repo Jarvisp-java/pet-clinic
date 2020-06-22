@@ -1,4 +1,4 @@
-package services;
+package guru.petclinic.petclinic.services;
 
 import java.util.Set;
 
