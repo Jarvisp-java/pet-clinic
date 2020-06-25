@@ -5,6 +5,21 @@
     <title>Title</title>
 </head>
 <body>
+
+<!--/*@thymesVar id="owner" type="guru.petclinic.petclinic.model.owner"*/-->
     <h1 th:text="'List of Owners'">text</h1>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        <tr th:each="owner : ${owners}">
+            <td th:text="${owner?.id}">Default 1</td>
+            <td th:text="${owner?.firstname}">Default john</td>
+            <td th:text="${owner?.lastname}">Default doe</td>
+        </tr>
+    </table>
 </body>
 </html>
