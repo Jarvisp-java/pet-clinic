@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'owners')}">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -7,19 +7,23 @@
 <body>
 
 <!--/*@thymesVar id="owner" type="guru.petclinic.petclinic.model.owner"*/-->
-    <h1 th:text="'List of Owners'">text</h1>
+    <h2 th:text="'List of Owners'">text</h2>
 
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-        </tr>
-        <tr th:each="owner : ${owners}">
-            <td th:text="${owner?.id}">Default 1</td>
-            <td th:text="${owner?.firstname}">Default john</td>
-            <td th:text="${owner?.lastname}">Default doe</td>
-        </tr>
+    <table id="vets" class="table table-striped">
+        <thead>
+            <tr>
+                <th style="width: 100px;">ID</th>
+                <th style="width: 150px;">First Name</th>
+                <th style="width: 150px;">Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="owner : ${owners}">
+                <td th:text="${owner?.id}">Default 1</td>
+                <td th:text="${owner?.firstname}">Default john</td>
+                <td th:text="${owner?.lastname}">Default doe</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
