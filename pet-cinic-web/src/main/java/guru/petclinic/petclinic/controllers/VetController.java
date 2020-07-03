@@ -16,12 +16,17 @@ public class VetController {
         this.vetService = vetService;
     }
 
-    @GetMapping()
+    @GetMapping("/list")
     public String listVets(Model model){
 
         model.addAttribute("vets", vetService.findAll());
 
         return "vets/index";
     }
+
+//    @GetMapping("/list")
+//    public String find(){
+//        return "notimplemented";
+//    }
 
 }
